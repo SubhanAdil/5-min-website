@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom matches,closest </title>
+</head>
+<body>
+    <div class="box" id="id1">This is an element 1</div>
+    <div class="box" id="id2">This is an element 2</div>
+ 
+   <script>
+let id1 = document.getElementById("id1")
+console.log(id1);
+
+//.box class hai jbhi result :true
+console.log(id1.matches('.box'));
+//.value koi class nhi hai  result: false 
+console.log(id1.matches('.value'));
+   </script>
+</body>
+</html>
