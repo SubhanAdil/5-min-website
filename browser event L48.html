@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser event L:48</title>
+</head>
+<body>
+<div>
+    <button id="btn">Click Me</button>
+    
+</div>
+
+ <script>
+
+let x = function(e){
+    alert('hello world!')
+}
+
+let y =function(e){
+    alert('hello world2!')
+}
+btn.addEventListener('click', x)
+
+ btn.addEventListener('click',y) 
+
+let a= prompt('what is your favorite number?')
+if (a == '2') {
+    btn.removeEventListener('click',y)
+
+}
+
+</script>
+</body>
+
+</html>
